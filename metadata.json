@@ -1,0 +1,8 @@
+{
+  "name": "رقيب",
+  "description": "منظومة رقيب - ذكاء يراقب، عدالة تحكم",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

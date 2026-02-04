@@ -1,0 +1,58 @@
+{
+  "id": "hero-section",
+  "type": "Hero",
+  "settings": {
+    "minHeight": "100vh",
+    "layout": "flex-col-center",
+    "background": {
+      "component": "BackgroundGrid",
+      "type": "grid",
+      "cellSize": "40px",
+      "color": "rgba(99, 102, 241, 0.1)",
+      "mask": "radial-gradient(ellipse at center, black 40%, transparent 80%)"
+    }
+  },
+  "elements": [
+    {
+      "id": "headline",
+      "component": "TextReveal",
+      "props": {
+        "text": "Designing the Future of Digital Interaction",
+        "delay": 200,
+        "className": "text-5xl md:text-7xl font-bold tracking-tight text-white justify-center leading-[1.1]"
+      }
+    },
+    {
+      "id": "description",
+      "type": "Text",
+      "content": "Craft premium interfaces with physics-based motion, intelligent layouts, and buttery smooth performance. Powered by the next generation of animation primitives.",
+      "styles": {
+        "className": "max-w-2xl mx-auto text-lg text-neutral-400 mb-10 opacity-0 animate-[fadeIn_1s_ease-out_1s_forwards]"
+      }
+    },
+    {
+      "id": "actions",
+      "type": "ButtonGroup",
+      "styles": {
+        "wrapper": "flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 animate-[fadeIn_1s_ease-out_1.2s_forwards]"
+      },
+      "buttons": [
+        {
+          "id": "btn-primary",
+          "component": "AnimatedButton",
+          "label": "Get Started",
+          "action": "navigate"
+        },
+        {
+          "id": "btn-secondary",
+          "type": "button",
+          "label": "Watch Demo",
+          "icon": "Play",
+          "styles": {
+            "className": "px-8 py-3 rounded-full text-sm font-medium text-neutral-400 hover:text-white transition-colors flex items-center gap-2"
+          }
+        }
+      ]
+    }
+  ]
+}
